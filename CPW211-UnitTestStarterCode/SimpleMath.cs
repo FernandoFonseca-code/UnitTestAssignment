@@ -15,22 +15,34 @@ namespace CPW211_UnitTestStarterCode
     {
         public static double Add(double a, double b)
         {
-            throw new NotImplementedException();
+            double result = 0;
+            result = a + b;
+            return result;
         }
 
         public static double Subtract(double a, double b)
         {
-            throw new NotImplementedException();
+            double result = 0;
+            result = a - b;
+            return result;
         }
 
         public static double Multiply(double a, double b)
         {
-            throw new NotImplementedException();
+            double result = 0;
+            result = a * b;
+            return result;
         }
 
         public static double Divide(double a, double b)
         {
-            throw new NotImplementedException();
+            if (b == 0)
+            {
+                throw new ArgumentException("Denominator cannot be zero");
+            }
+            double result = 0;
+            result = a / b;
+            return result;
         }
     }
 }
